@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018, // Обновляем до более новой версии ECMAScript
+    "sourceType": "module", // Используем модули
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "amd": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "comma-dangle": [
+      "warn",
+      "always-multiline"
+    ], // Правило запятых
+    "quotes": [
+      "warn",
+      "single"
+    ], // Одинарные кавычки
+    "no-undef": "warn", // Предупреждение, а не ошибка, о неопределенных переменных
+    "global-strict": 0, // Не требуется строгий режим глобально
+    "no-extra-semi": "warn", // Предупреждение о лишних точках с запятой
+    "no-underscore-dangle": 0, // Разрешены подчеркивания в идентификаторах
+    "no-console": "warn", // Предупреждение при использовании console.log и т.д.
+    "no-unused-vars": "warn", // Предупреждение о неиспользуемых переменных
+    "no-trailing-spaces": [
+      "warn",
+      {
+        "skipBlankLines": true
+      }
+    ], // Предупреждение о лишних пробелах в конце строк
+    "no-unreachable": "warn", // Предупреждение о недостижимом коде
+    "no-alert": 0, // Оповещения (alert) не рекомендуется, но не является ошибкой
+    "react/jsx-uses-react": "warn", // Предупреждение, если React не используется в JSX
+    "react/jsx-uses-vars": "warn" // Предупреждение, если JSX переменные не используются
+  }
+}
